@@ -1,0 +1,398 @@
+/* app global css */
+:root {
+    --q-primary: #1890FF;
+}
+
+@font-face {
+    font-family: 'BreezeSans-Regular';
+    src: url(fonts/BreezeSans-Regular_20150728.ttf);
+}
+@font-face {
+    font-family: 'BreezeSans-Bold';
+    src: url(fonts/BreezeSans-Bold_20150728.ttf);
+}
+
+body {
+    font-family: 'BreezeSans-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    background: #fff;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.header-white {
+    background: #fff;
+}
+.no-shadow {
+    box-shadow: none;
+}
+header.no-shadow.q-header .q-layout__shadow:after {
+    box-shadow: 0 0 11px 4px rgba(0, 0, 0, 0.05), 0 0px 10px rgba(0, 0, 0, 0.1);
+}
+.align-center {
+    align-items: center;
+}
+.logo-sm {
+    height: 32px;
+}
+.q-list.menu-header .q-link {
+    height: 64px;
+    font-size: 15px;
+    color: #000;
+    padding: 15px 20px;
+    font-weight: 400;
+    line-height: 22px;
+    transition: .3s;
+}
+.q-list.menu-header .q-link:hover, .q-list.menu-header .q-link.active {
+    color: var(--q-primary);
+}
+.q-list.menu-header .q-link.active::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    height: 2px;
+    background: var(--q-primary);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    line-height: 25px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+    padding: 0px 7px;
+    border: 1px solid;
+}
+.button-login {
+    background: var(--q-primary);
+    color: white;
+    border-color: var(--q-primary);
+}
+.button-register {
+    border-color: #D9D9D9;
+    color: #000;
+}
+.q-hoverable:hover > .q-focus-helper {
+    opacity: 0 !important;
+}
+
+.title-slide {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.om-content p {
+    font-size: 24px;
+    font-weight: 400;
+}
+.mx-4 {
+    margin: 0.75rem 0;
+}
+.mx-6 {
+    margin: 1.75rem 0;
+}
+.q-carousel__navigation .q-btn.rectanger-icon {
+    width: 30px;
+    height: 5px;
+    background: #fff;
+    border-radius: 2px;
+    min-height: inherit;
+    min-width: inherit;
+    padding: 0;
+    opacity: 0.5;
+    transition: .3s;
+}
+.q-carousel__navigation .q-btn.rectanger-icon.active {
+    opacity: 1;
+    width: 40px;
+}
+
+.card-app img {
+    width: 100%;
+    height: 168px;
+    object-fit: cover;
+}
+
+.card-app .user-item img {
+    width: 32px;
+    height: 32px;
+}
+.mb-4 {
+    margin-bottom: 1rem;
+}
+.mt-3 {
+    margin-top: .75rem;
+}
+.title-heading-row {
+    font-size: 24px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.content-landing {
+    position: relative;
+    padding: 77px 0;
+    min-height: calc(100vh - 150px);
+}
+.content-landing .q-item {
+    padding: 0 10px;
+}
+.card-app {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    position: relative;
+    margin-bottom: 18px;
+}
+.card-app a {
+    color: #000;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-h6 {
+    font-size: 17px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.text-subtitle2 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #2e2e2e;
+    margin-bottom: 8px;
+    min-height: 50px;
+}
+
+.time-sm {
+    font-size: 14px;
+    color: #999;
+}
+
+.users-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.user-item {
+    display: flex;
+}
+.avatar {
+    position: relative;
+}
+
+.pull-up {
+    margin-left: -0.6rem;
+    transition: all .25s ease;
+}
+
+.rounded-circle {
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+
+.pull-up:hover {
+    transform: translateY(-4px) scale(1.02);
+    z-index: 30;
+    transition: all .25s ease;
+}
+.mb-65 {
+    margin-bottom: 65px;
+}
+.footer {
+    position: relative;
+    padding: 1rem;
+}
+
+.i-gh {
+    max-width: 450px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #999;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+.loginPage-content {
+    position: relative;
+    max-width: 700px;
+    margin: 55px auto 0;
+    padding: 0 15px;
+}
+.mb-30 {
+    margin-bottom:30px;
+}
+.lg-head {
+    text-align: center;
+}
+
+.title-lg {
+    font-size: 33px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #7f7f7f;
+}
+
+.sm-title {
+    font-size: 14px;
+    color: #999;
+    display: block;
+    margin-top: 10px;
+}
+
+.loginForm {
+    max-width: 360px;
+    margin: 0 auto;
+}
+.loginForm .q-tabs__content--align-justify .q-tab {
+    flex: none;
+    padding: 0;
+    text-transform: capitalize;
+    margin-right: 2rem;
+}
+.loginForm .q-tab-panel {
+    padding: 0;
+}
+.loginForm .q-icon {
+    font-size: 17px;
+}
+.loginForm .q-gutter-y-md, .q-gutter-md {
+    margin-top: 0;
+}
+.loginForm .q-gutter-x-md, .q-gutter-md {
+    margin-left: 0;
+}
+.loginForm .q-gutter-y-md > *, .q-gutter-md > * {
+    margin-top: 8px;
+}
+.loginForm .q-gutter-x-md > *, .q-gutter-md > * {
+    margin-left: 0;
+}
+.q-field__control {
+    height: 48px;
+}
+.q-field__marginal {
+    height: 48px;
+}
+.q-field__label {
+    font-size: 14px;
+    top: 15px;
+}
+.q-field--labeled .q-field__native, .q-field--labeled .q-field__prefix, .q-field--labeled .q-field__suffix {
+    padding-top: 18px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.q-checkbox__inner {
+    font-size: 32px;
+}
+.q-checkbox__label.q-anchor--skip {
+    font-size: 14px;
+    color: #444;
+}
+.q-checkbox__bg {
+    border: 1px solid currentColor;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.login-social {
+    margin-left: 1rem;
+}
+
+.login-social button {
+    margin-left: 5px;
+}
+.group-btn button {
+    background: #D9D9D9;
+    height: 48px;
+    min-width: 160px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-70 {
+    margin-top: 70px;
+}
+.bottom-absolute {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.myApp-tabs .q-tab__label {
+    font-size: 20px;
+}
+.q-tab--active .q-tab__indicator {
+    background: var(--q-primary);
+}
+
+.q-tab--active .q-tab__label {
+    color: var(--q-primary);
+}
+.list-news {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.list-news .q-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.q-mb-lg {
+    margin-bottom: 0;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.mt-0 {
+    margin-top:0;
+}
+.q-field__bottom--animated {
+    transform: none;
+    position: relative;
+}
+.q-field__bottom {
+    min-height: auto;
+}
+.q-field--with-bottom {
+    padding-bottom: 0;
+}
+.button-account i {
+    font-size: 18px !important;
+}
+.border-bottom-e {
+    border-bottom: 1px solid #eee;
+}
+
+.title-h3 {
+    font-size: 20px;
+}
