@@ -396,3 +396,19 @@ a {
 .title-h3 {
     font-size: 20px;
 }
+.q-carousel__slide {
+    position: relative;
+}
+
+.q-carousel__slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 30%);
+}
+.container {
+    position: relative;
+}

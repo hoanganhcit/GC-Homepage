@@ -10,14 +10,14 @@
     :navigation-position="navPos"
     padding
     arrows
-    height="400px"
-    class="bg-primary text-white mt-3"
+    height="500px"
+    class="text-white mt-3"
   >
     <template v-slot:navigation-icon="{ active, onClick }">
       <q-btn v-if="active" class="rectanger-icon active" flat round dense @click="onClick" />
       <q-btn v-else class="rectanger-icon" flat round dense @click="onClick" />
     </template>
-    <q-carousel-slide name="tv" class="column no-wrap flex-center">
+    <q-carousel-slide name="slide1" class="column no-wrap flex-center" img-src="~assets/images/seniorCare.jpg">
       <div class="container text-center">
         <div class="slide--our-mission-content">
           <div class="om-content">
@@ -36,7 +36,7 @@
         </div>
       </div>
     </q-carousel-slide>
-    <q-carousel-slide name="style" class="column no-wrap flex-center">
+    <q-carousel-slide name="slide2" class="column no-wrap flex-center"  img-src="~assets/images/senior-services.jpg">
       <div class="container text-center">
         <div class="slide--our-mission-content">
           <div class="om-content">
@@ -49,7 +49,7 @@
         </div>
       </div>
     </q-carousel-slide>
-    <q-carousel-slide name="layers" class="column no-wrap flex-center">
+    <q-carousel-slide name="slide3" class="column no-wrap flex-center"  img-src="~assets/images/non-home-banner.jpg">
       <div class="container text-center">
         <div class="slide--our-mission-content">
           <div class="om-content">
@@ -61,7 +61,7 @@
         </div>
       </div>
     </q-carousel-slide>
-    <q-carousel-slide name="map" class="column no-wrap flex-center">
+    <q-carousel-slide name="slide4" class="column no-wrap flex-center"  img-src="~assets/images/Senior-Care.jpg">
       <div class="container text-center">
         <div class="slide--our-mission-content">
           <div class="om-content">
@@ -393,7 +393,7 @@ export default defineComponent({
   name: 'MainLayout',
   setup () {
     return {
-      slide: ref('style'),
+      slide: ref('slide1'),
       navPos: ref('top')
     }
   },
