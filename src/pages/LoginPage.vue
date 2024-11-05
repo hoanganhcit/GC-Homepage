@@ -7,6 +7,7 @@
                 <div class="sm-title">Gerry Health Labs gives you access to the applications and services that help you care for your older adult </div>
             </div>
             <div class="loginForm">
+                <div class="title-lg">Service Partner Login</div>
             <q-tabs
                 v-model="tab"
                 narrow-indicator

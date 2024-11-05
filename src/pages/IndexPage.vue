@@ -77,10 +77,10 @@
   <div class="container">
     <div class="content-landing">
       <div class="lastest-app mb-65 row">
-        <div class="col-12 q-item">
+        <div class="col col-md-12 col-xs-12 q-item">
           <div class="title-heading-row uppercase">App Lastest</div>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class=" my-card no-shadow card-app">
                 <a href="#"><img src="~assets/images/1.png" /></a>
@@ -109,7 +109,7 @@
             </q-card>
           </q-item>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class="  my-card no-shadow card-app">
                 <a href="#"><img src="~assets/images/2.png" /></a>
@@ -138,7 +138,7 @@
             </q-card>
         </q-item>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class="  my-card no-shadow card-app">
                 <a href="#"><img src="~assets/images/3.png" /></a>
@@ -166,7 +166,7 @@
             </q-card>
         </q-item>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class="  my-card no-shadow card-app">
                 <a href="#">
@@ -202,7 +202,7 @@
         <div class="col-12 q-item">
           <div class="title-heading-row uppercase">MOST POPULAR APPS</div>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class=" my-card no-shadow card-app">
                 <a href="#"><img src="~assets/images/1.png" /></a>
@@ -231,7 +231,7 @@
             </q-card>
           </q-item>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class="  my-card no-shadow card-app">
                 <a href="#"><img src="~assets/images/2.png" /></a>
@@ -260,7 +260,7 @@
             </q-card>
         </q-item>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class="  my-card no-shadow card-app">
                 <a href="#"><img src="~assets/images/3.png" /></a>
@@ -288,7 +288,7 @@
             </q-card>
         </q-item>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class="  my-card no-shadow card-app">
                 <a href="#">
@@ -324,7 +324,7 @@
         <div class="col-12 q-item">
           <div class="title-heading-row uppercase">OUR PARTNERS</div>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class=" my-card no-shadow card-app">
                 <a href="#"><img src="~assets/images/1.png" /></a>
@@ -336,7 +336,7 @@
             </q-card>
           </q-item>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class="  my-card no-shadow card-app">
                 <a href="#"><img src="~assets/images/2.png" /></a>
@@ -348,7 +348,7 @@
             </q-card>
         </q-item>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class="  my-card no-shadow card-app">
                 <a href="#"><img src="~assets/images/3.png" /></a>
@@ -360,7 +360,7 @@
             </q-card>
         </q-item>
         </div>
-        <div class="col-3">
+        <div class="col col-md-3 col-sm-6 col-xs-12">
           <q-item>
             <q-card class="  my-card no-shadow card-app">
                 <a href="#">

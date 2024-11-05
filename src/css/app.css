@@ -1,8 +1,18 @@
 /* app global css */
 :root {
     --q-primary: #1890FF;
+    --q-positive: #049A25;
+    --q-blue-primary: #2EA0D1;
 }
 
+@font-face {
+    font-family: 'BreezeSans-Thin';
+    src: url(fonts/BreezeSans-Thin_20150728.ttf);
+}
+@font-face {
+    font-family: 'BreezeSans-Light';
+    src: url(fonts/BreezeSans-Light_20150728.ttf);
+}
 @font-face {
     font-family: 'BreezeSans-Regular';
     src: url(fonts/BreezeSans-Regular_20150728.ttf);
@@ -79,6 +89,11 @@ header.no-shadow.q-header .q-layout__shadow:after {
     border-color: #D9D9D9;
     color: #000;
 }
+
+.bg-positive {
+    background: var(--q-positive) !important;
+    border: 1px solid var(--q-positive) !important;
+}
 .q-hoverable:hover > .q-focus-helper {
     opacity: 0 !important;
 }
@@ -152,6 +167,7 @@ header.no-shadow.q-header .q-layout__shadow:after {
     border-radius: 0;
     position: relative;
     margin-bottom: 18px;
+    width: 100%;
 }
 .card-app a {
     color: #000;
@@ -357,6 +373,34 @@ a {
 .q-tab--active .q-tab__label {
     color: var(--q-primary);
 }
+.download-hero {
+    position: relative;
+    /* padding-bottom: 150px; */
+}
+/* .download-hero::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 390px;
+    position: absolute;
+    background-image: url(/src/assets/images/bg-download.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.download-hero::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 390px;
+    position: absolute;
+    background-image: url(/src/assets/images/bg-download-white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+} */
 .list-news {
     width: 100%;
     padding: 0 10px;
@@ -411,4 +455,81 @@ a {
 }
 .container {
     position: relative;
+}
+.pr-0 {
+    padding-right: 0 !important;
+}
+.download-content-center {
+    position: relative;
+    max-width: 512px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-download-center {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.dl-item-section {
+    position: relative;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.title-4 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #414040;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.title-5 {
+    font-size: 28px;
+    font-weight: 300;
+}
+.text-blue-primary {
+    color: var(--q-blue-primary);
+}
+.font-weight-thin {
+    font-family: 'BreezeSans-Thin';
+}
+.font-weight-light {
+    font-family: 'BreezeSans-Light';
+}
+.my-3 {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.my-4 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .om-content p {
+        font-size: 18px;
+    }
+    .title-4 {
+        font-size: 23px;
+    }
+    
+    .title-download-center {
+        font-size: 23px;
+        line-height: 28px;
+    }
+    
+    .title-5 {
+        font-size: 18px;
+    }
+    .download-hero {
+        padding-bottom: 0;
+    }
+    .download-hero::before, 
+    .download-hero::after {
+        bottom:60px;
+        height: 100px;
+    }
 }
