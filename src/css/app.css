@@ -507,7 +507,37 @@ a {
     margin-top: 2em;
     margin-bottom: 2em;
 }
-
+.fs-18 {
+    font-size: 18px;
+}
+.q-banner--dense {
+    padding: 10px;
+}
+.hidden {
+    display: none;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.file-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.px-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.q-field--auto-height .q-field__control, .q-field--auto-height .q-field__native {
+    min-height: auto;
+}
 @media screen and (max-width: 768px) {
     .om-content p {
         font-size: 18px;

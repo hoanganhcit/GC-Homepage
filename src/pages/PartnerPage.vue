@@ -14,7 +14,14 @@
     class="text-white mt-3"
   >
     <template v-slot:navigation-icon="{ active, onClick }">
-      <q-btn v-if="active" class="rectanger-icon active" flat round dense @click="onClick" />
+      <q-btn
+        v-if="active"
+        class="rectanger-icon active"
+        flat
+        round
+        dense
+        @click="onClick"
+      />
       <q-btn v-else class="rectanger-icon" flat round dense @click="onClick" />
     </template>
     <q-carousel-slide
@@ -38,43 +45,15 @@
     <div class="content-landing">
       <div class="lastest-app mb-65 row">
         <div class="col col-md-12 col-xs-12 q-item">
-          <div class="title-heading-row uppercase">App Lastest</div>
+          <div class="title-heading-row uppercase">ABOUT HELPING HANDS HEALTHCARE</div>
         </div>
-        <div
-          class="col col-md-3 col-sm-6 col-xs-12"
-          v-for="(item, index) in appList"
-          :key="index"
-        >
-          <q-item>
-            <q-card class="my-card no-shadow card-app">
-              <a :href="item.link">
-                <img :src="item.image" />
-              </a>
-
-              <q-card-section>
-                <a :href="item.link">
-                  <div class="text-h6">{{ item.title }}</div>
-                </a>
-                <div class="text-subtitle2">{{ item.subtitle }}</div>
-
-                <div class="q-pt-none flex justify-between align-center">
-                  <div class="time-sm">{{ item.time }}</div>
-                  <div class="users-list">
-                    <div class="user-item" v-for="(user, userIndex) in item.users" :key="userIndex">
-                      <div class="avatar pull-up">
-                        <img :src="user.avatar" alt="" class="rounded-circle" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </q-card-section>
-            </q-card>
-          </q-item>
+        <div class="col col-md-12 col-xs-12 q-item">
+            add descriptive about us here
         </div>
       </div>
       <div class="most-popular-app mb-65 row">
         <div class="col-12 q-item">
-          <div class="title-heading-row uppercase">MOST POPULAR APPS</div>
+          <div class="title-heading-row uppercase">APPS</div>
         </div>
         <div
           class="col col-md-3 col-sm-6 col-xs-12"
@@ -110,7 +89,7 @@
       </div>
       <div class="our-partner mb-65 row">
         <div class="col-12 q-item">
-          <div class="title-heading-row uppercase">OUR PARTNERS</div>
+          <div class="title-heading-row uppercase">SERVICES</div>
         </div>
         <div
           class="col col-md-3 col-sm-6 col-xs-12"
@@ -168,8 +147,8 @@ export default defineComponent({
         {
           link: '#',
           image: image1,
-          title: 'Take Me There',
-          subtitle: 'Ride sharing for seniors',
+          title: 'Gerry Connect',
+          subtitle: 'Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.',
           time: 'Just Now',
           users: [
             { avatar: user1 },
@@ -180,8 +159,8 @@ export default defineComponent({
         {
           link: '#',
           image: image2,
-          title: 'Dude Where’s My Food?',
-          subtitle: 'Easy recipes and pre-made meal kits for older adults.',
+          title: 'Bingo',
+          subtitle: 'Eleifend ultricies nam mauris non facilisis.',
           time: '2 hrs ago',
           users: [
             { avatar: user1 },
@@ -192,8 +171,8 @@ export default defineComponent({
         {
           link: '#',
           image: image3,
-          title: 'Golden Age of Radio',
-          subtitle: 'Streaming hits from the big band to the doo-wop era.',
+          title: 'Skinopathy',
+          subtitle: 'Etiam condimentum leo arcu posuere vitae, quis.',
           time: '4 hrs ago',
           users: [
             { avatar: user1 },
@@ -204,8 +183,8 @@ export default defineComponent({
         {
           link: '#',
           image: image4,
-          title: 'Word Guesser',
-          subtitle: 'Guess the word in up to 6 tries',
+          title: 'Angry Birds',
+          subtitle: 'Ac nulla hendrerit diam, scelerisque fusce lacus sed.',
           time: '6 hrs ago',
           users: [
             { avatar: user1 },

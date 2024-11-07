@@ -202,7 +202,7 @@ export default {
     onSubmit () {
       this.$refs.loginForm.validate().then((valid) => {
         if (valid) {
-          this.$router.push('/my-apps')
+          this.$router.push('/company-information')
         } else {
           alert('Please correct the errors before submitting.')
         }
@@ -220,7 +220,7 @@ export default {
     onSubmitRegister () {
       this.$refs.registerForm.validate().then((valid) => {
         if (valid) {
-          this.$router.push('/my-apps')
+          this.$router.push('/company-information')
         } else {
           alert('Please correct the errors before submitting.')
         }

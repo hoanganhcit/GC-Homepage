@@ -11,10 +11,10 @@
         </q-item>
         <q-space />
         <q-list class="menu-header row items-center" v-if="!$q.screen.lt.md">
-          <q-item to="/" class="align-center active">Home</q-item>
+          <q-item to="/" :class="{ active: $route.path === '/' }" class="align-center">Home</q-item>
           <q-item to="/" class="align-center">Latest Apps</q-item>
           <q-item to="/" class="align-center">Most Popular</q-item>
-          <q-item to="/" class="align-center">Our Partners</q-item>
+          <q-item to="/partner" :class="{ active: $route.path === '/partner' }" class="align-center">Our Partners</q-item>
           <q-item to="/login" class="align-center pr-0">
             <div class="btn button-login">
               <span>Partner Login</span>
@@ -96,8 +96,8 @@ export default defineComponent({
   name: 'MainLayout',
   setup () {
     return {
-      headerDashboard: ['/my-apps'],
-      headerRoute: ['/', '/login', '/download'],
+      headerDashboard: ['/company-information'],
+      headerRoute: ['/', '/login', '/download', '/partner'],
       drawer: ref(false)
     }
   },
