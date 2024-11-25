@@ -528,7 +528,7 @@ export default {
       ],
       appList: [
         {
-          link: '#',
+          link: '#/app-details',
           image: image1,
           title: 'Take Me There',
           subtitle: 'Ride sharing for seniors',
@@ -540,7 +540,7 @@ export default {
           ]
         },
         {
-          link: '#',
+          link: '#/app-details',
           image: image2,
           title: 'Dude Where’s My Food?',
           subtitle: 'Easy recipes and pre-made meal kits for older adults.',
@@ -552,7 +552,7 @@ export default {
           ]
         },
         {
-          link: '#',
+          link: '#/app-details',
           image: image3,
           title: 'Golden Age of Radio',
           subtitle: 'Streaming hits from the big band to the doo-wop era.',
@@ -564,7 +564,7 @@ export default {
           ]
         },
         {
-          link: '#',
+          link: '#/app-details',
           image: image4,
           title: 'Word Guesser',
           subtitle: 'Guess the word in up to 6 tries',

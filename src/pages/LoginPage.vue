@@ -8,14 +8,6 @@
             </div>
             <div class="loginForm">
                 <div class="title-lg">Service Partner Login</div>
-            <q-tabs
-                v-model="tab"
-                narrow-indicator
-                class="q-mb-lg"
-            >
-                <q-tab class="text-black" name="login" label="Login"  />
-                <q-tab class="text-black" name="register" label="Register" />
-            </q-tabs>
 
             <div class="q-gutter-y-sm">
                 <q-tab-panels
@@ -90,85 +82,6 @@
 
                     </q-tab-panel>
                 </q-tab-panels>
-
-                <q-tab-panels
-                v-model="tab"
-                class="mt-0"
-                >
-                    <q-tab-panel name="register">
-                        <q-form
-                            @submit="onSubmitRegister"
-                            @reset="onResetRegister"
-                            class="q-gutter-md"
-                            ref="registerForm"
-                            >
-                            <q-input
-                                outlined
-                                v-model="firstname"
-                                label="First Name"
-                                lazy-rules
-                                :rules="[ val => val && val.length > 0 || 'Please type something']"
-                            >
-                                <template v-slot:prepend>
-                                    <q-icon color="primary" name="fal fa-user" />
-                                </template>
-                            </q-input>
-                            <q-input
-                                outlined
-                                v-model="lastname"
-                                label="Last Name"
-                                lazy-rules
-                                :rules="[ val => val && val.length > 0 || 'Please type something']"
-                            >
-                                <template v-slot:prepend>
-                                    <q-icon color="primary" name="fal fa-user" />
-                                </template>
-                            </q-input>
-                            <q-input
-                                outlined
-                                v-model="email"
-                                label="Email *"
-                                type="email"
-                                lazy-rules
-                                :rules="[val => !!val || 'Email is required', val => emailValidation(val) || 'Email must be valid']"
-                            >
-                                <template v-slot:prepend>
-                                    <q-icon color="primary" name="fal fa-envelope" />
-                                </template>
-                            </q-input>
-
-                            <q-input
-                                outlined
-                                type="password"
-                                v-model="password"
-                                label="Password"
-                                hint="Password (minimum 6 digits, case sensitive)"
-                                lazy-rules
-                                :rules="[val => !!val || 'Password is required', val => val.length >= 6 || 'Password must be at least 6 characters']"
-                            >
-                                <template v-slot:prepend>
-                                    <q-icon color="primary" name="fal fa-lock" />
-                                </template>
-                            </q-input>
-                            <q-input
-                                outlined
-                                v-model="confirmPassword"
-                                label="Confirm Password"
-                                type="password"
-                                :rules="[val => !!val || 'Confirm Password is required', val => val === password || 'Passwords do not match']"
-
-                            >
-                                <template v-slot:prepend>
-                                    <q-icon color="primary" name="fal fa-lock" />
-                                </template>
-                            </q-input>
-                            <div class="group-btn flex align-center justify-between mt-30">
-                                <q-btn label="Cancel" type="reset" color="grey-3" class="text-black" />
-                                <q-btn label="Register" type="submit" color="primary" class="q-ml-sm" />
-                            </div>
-                        </q-form>
-                    </q-tab-panel>
-                </q-tab-panels>
             </div>
         </div>
         <div class="footer mt-50">
@@ -190,12 +103,8 @@ export default {
     return {
       tab: ref('login'),
       rememberMe: ref(false),
-      username: ref(null),
-      password: ref(null),
-      firstname: ref(null),
-      lastname: ref(null),
       email: ref(null),
-      confirmPassword: ref(null)
+      password: ref(null)
     }
   },
   methods: {
@@ -209,30 +118,13 @@ export default {
       })
     },
     resetForm () {
-      this.username = ''
+      this.email = ''
       this.password = ''
       this.$refs.loginForm.resetValidation()
     },
     emailValidation (email) {
       const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
       return regex.test(email)
-    },
-    onSubmitRegister () {
-      this.$refs.registerForm.validate().then((valid) => {
-        if (valid) {
-          this.$router.push('/company-information')
-        } else {
-          alert('Please correct the errors before submitting.')
-        }
-      })
-    },
-    onResetRegister () {
-      this.firstname = ''
-      this.lastname = ''
-      this.email = ''
-      this.password = ''
-      this.confirmPassword = ''
-      this.$refs.registerForm.resetValidation()
     }
   }
 }

@@ -35,7 +35,9 @@
         <div class="slide--our-mission-content">
           <div class="om-content">
             <div v-if="item.title" class="title-slide">{{ item.title }}</div>
-            <p v-for="(paragraph, idx) in item.paragraphs" :key="idx">{{ paragraph }}</p>
+            <p v-for="(paragraph, idx) in item.paragraphs" :key="idx">
+              {{ paragraph }}
+            </p>
           </div>
         </div>
       </div>
@@ -45,81 +47,51 @@
     <div class="content-landing">
       <div class="lastest-app mb-65 row">
         <div class="col col-md-12 col-xs-12 q-item">
-          <div class="title-heading-row uppercase">ABOUT HELPING HANDS HEALTHCARE</div>
+            <q-breadcrumbs>
+                <q-breadcrumbs-el label="Home" />
+                <q-breadcrumbs-el label="App Name" />
+                <q-breadcrumbs-el label="Vendor Name" />
+            </q-breadcrumbs>
         </div>
-        <div class="col col-md-12 col-xs-12 q-item">
-            add descriptive about us here
+        <div class="col col-md-8 col-xs-12 q-item">
+            <div class="app-description">
+                <div class="title-4">Descriptions</div>
+                <p>
+                    This is a detailed description of the app. It explains the app's features,
+                    functionality, and benefits. Provide enough information to engage and inform users.
+                </p>
+            </div>
+            <div class="meta-tags mb-4">
+                <q-badge color="blue">#meta Tag1</q-badge>
+                <q-badge color="blue">#meta Tag2</q-badge>
+                <q-badge color="blue">#meta Tag3</q-badge>
+            </div>
+            <div class="app-reviews">
+                <div class="title-4">Reviews</div>
+                <p>This is a detailed review of the app. It explains the app's features,
+                    functionality, and benefits. Provide enough information to engage and inform users.</p>
+            </div>
         </div>
-      </div>
-      <div class="most-popular-app mb-65 row">
-        <div class="col-12 q-item">
-          <div class="title-heading-row uppercase">APPS</div>
+        <div class="col col-md-4 col-xs-12 q-item">
+            <div class="logo-and-buttons  mb-4">
+                <img
+                    src="https://via.placeholder.com/150"
+                    alt="App Logo"
+                    class="app-logo q-mb-md"
+                />
+            </div>
+            <q-btn label="Buy Now" color="primary" class="q-mb-sm d-block fullwidth" @click="buyNow" />
+            <q-btn label="Add to Cart" color="secondary " class="d-block fullwidth" @click="addToCart" />
         </div>
-        <div
-          class="col col-md-3 col-sm-6 col-xs-12"
-          v-for="(item, index) in appList"
-          :key="index"
-        >
-          <q-item>
-            <q-card class="my-card no-shadow card-app">
-              <a :href="item.link">
-                <img :src="item.image" />
-              </a>
-
-              <q-card-section>
-                <a :href="item.link">
-                  <div class="text-h6">{{ item.title }}</div>
-                </a>
-                <div class="text-subtitle2">{{ item.subtitle }}</div>
-
-                <div class="q-pt-none flex justify-between align-center">
-                  <div class="time-sm">{{ item.time }}</div>
-                  <div class="users-list">
-                    <div class="user-item" v-for="(user, userIndex) in item.users" :key="userIndex">
-                      <div class="avatar pull-up">
-                        <img :src="user.avatar" alt="" class="rounded-circle" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </q-card-section>
-            </q-card>
-          </q-item>
         </div>
-      </div>
-      <div class="our-partner mb-65 row">
-        <div class="col-12 q-item">
-          <div class="title-heading-row uppercase">SERVICES</div>
+        <div class="footer">
+        <div class="i-gh">
+            <div class="t-f">Gerry Health Labs</div>
+            <q-icon name="fab fa-github"></q-icon>
+            <div class="t-c">Toronto MicroElectronics Inc.</div>
         </div>
-        <div
-          class="col col-md-3 col-sm-6 col-xs-12"
-          v-for="(org, index) in organizations"
-          :key="index"
-        >
-          <q-item>
-            <q-card class="my-card no-shadow card-app">
-              <a :href="org.link">
-                <img :src="org.image" />
-              </a>
-
-              <q-card-section>
-                <a :href="org.link">
-                  <div class="text-h6">{{ org.title }}</div>
-                </a>
-                <div class="text-subtitle2">{{ org.description }}</div>
-              </q-card-section>
-            </q-card>
-          </q-item>
+        <div class="copyright">Copyright ©2024 Toronto MicroElectronics Inc.</div>
         </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="i-gh">
-        <div class="t-f">Gerry Health Labs</div>
-        <q-icon name="fab fa-github"></q-icon>
-        <div class="t-c">Toronto MicroElectronics Inc.</div>
-      </div>
-      <div class="copyright">Copyright ©2024 Toronto MicroElectronics Inc.</div>
     </div>
   </div>
 </template>
@@ -137,6 +109,7 @@ import image4 from 'assets/images/4.png'
 import user1 from 'assets/images/user-1.png'
 import user2 from 'assets/images/user-2.png'
 import user3 from 'assets/images/user-33.png'
+
 export default defineComponent({
   name: 'MainLayout',
   setup () {
@@ -145,78 +118,67 @@ export default defineComponent({
       navPos: ref('top'),
       appList: [
         {
-          link: '#/app-details',
+          link: '#',
           image: image1,
           title: 'Gerry Connect',
-          subtitle: 'Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.',
+          subtitle:
+            'Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.',
           time: 'Just Now',
-          users: [
-            { avatar: user1 },
-            { avatar: user2 },
-            { avatar: user3 }
-          ]
+          users: [{ avatar: user1 }, { avatar: user2 }, { avatar: user3 }]
         },
         {
-          link: '#/app-details',
+          link: '#',
           image: image2,
           title: 'Bingo',
           subtitle: 'Eleifend ultricies nam mauris non facilisis.',
           time: '2 hrs ago',
-          users: [
-            { avatar: user1 },
-            { avatar: user2 },
-            { avatar: user3 }
-          ]
+          users: [{ avatar: user1 }, { avatar: user2 }, { avatar: user3 }]
         },
         {
-          link: '#/app-details',
+          link: '#',
           image: image3,
           title: 'Skinopathy',
           subtitle: 'Etiam condimentum leo arcu posuere vitae, quis.',
           time: '4 hrs ago',
-          users: [
-            { avatar: user1 },
-            { avatar: user2 },
-            { avatar: user3 }
-          ]
+          users: [{ avatar: user1 }, { avatar: user2 }, { avatar: user3 }]
         },
         {
-          link: '#/app-details',
+          link: '#',
           image: image4,
           title: 'Angry Birds',
           subtitle: 'Ac nulla hendrerit diam, scelerisque fusce lacus sed.',
           time: '6 hrs ago',
-          users: [
-            { avatar: user1 },
-            { avatar: user2 },
-            { avatar: user3 }
-          ]
+          users: [{ avatar: user1 }, { avatar: user2 }, { avatar: user3 }]
         }
       ],
       organizations: [
         {
-          link: '#/app-details',
+          link: '#',
           image: image1,
           title: 'VHA Home HealthCare',
-          description: 'VHA Home HealthCare (VHA) is a not-for-profit charitable organization that helps ...'
+          description:
+            'VHA Home HealthCare (VHA) is a not-for-profit charitable organization that helps ...'
         },
         {
-          link: '#/app-details',
+          link: '#',
           image: image2,
           title: 'Helping Hands HealthCare',
-          description: 'Providing professional healthcare personnel to Canadian hospitals since 1997...'
+          description:
+            'Providing professional healthcare personnel to Canadian hospitals since 1997...'
         },
         {
-          link: '#/app-details',
+          link: '#',
           image: image3,
           title: 'Skinopathy',
-          description: 'Artificial intelligence that can be used by physicians, nurses, and patients to pre-screen for skin cancers...'
+          description:
+            'Artificial intelligence that can be used by physicians, nurses, and patients to pre-screen for skin cancers...'
         },
         {
-          link: '#/app-details',
+          link: '#',
           image: image4,
           title: 'Canadian Assn of Retired People',
-          description: 'CARP advocates for financial security and better access to healthcare for older adults...'
+          description:
+            'CARP advocates for financial security and better access to healthcare for older adults...'
         }
       ],
       slides: [

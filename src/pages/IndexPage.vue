@@ -38,7 +38,7 @@
     <div class="content-landing">
       <div class="lastest-app mb-65 row">
         <div class="col col-md-12 col-xs-12 q-item">
-          <div class="title-heading-row uppercase">App Lastest</div>
+          <div class="title-heading-row uppercase">Lastest Apps</div>
         </div>
         <div
           class="col col-md-3 col-sm-6 col-xs-12"
@@ -166,7 +166,7 @@ export default defineComponent({
       navPos: ref('top'),
       appList: [
         {
-          link: '#',
+          link: '#/app-details',
           image: image1,
           title: 'Take Me There',
           subtitle: 'Ride sharing for seniors',
@@ -178,7 +178,7 @@ export default defineComponent({
           ]
         },
         {
-          link: '#',
+          link: '#/app-details',
           image: image2,
           title: 'Dude Where’s My Food?',
           subtitle: 'Easy recipes and pre-made meal kits for older adults.',
@@ -190,7 +190,7 @@ export default defineComponent({
           ]
         },
         {
-          link: '#',
+          link: '#/app-details',
           image: image3,
           title: 'Golden Age of Radio',
           subtitle: 'Streaming hits from the big band to the doo-wop era.',
@@ -202,7 +202,7 @@ export default defineComponent({
           ]
         },
         {
-          link: '#',
+          link: '#/app-details',
           image: image4,
           title: 'Word Guesser',
           subtitle: 'Guess the word in up to 6 tries',
@@ -216,25 +216,25 @@ export default defineComponent({
       ],
       organizations: [
         {
-          link: '#',
+          link: '#/app-details',
           image: image1,
           title: 'VHA Home HealthCare',
           description: 'VHA Home HealthCare (VHA) is a not-for-profit charitable organization that helps ...'
         },
         {
-          link: '#',
+          link: '#/app-details',
           image: image2,
           title: 'Helping Hands HealthCare',
           description: 'Providing professional healthcare personnel to Canadian hospitals since 1997...'
         },
         {
-          link: '#',
+          link: '#/app-details',
           image: image3,
           title: 'Skinopathy',
           description: 'Artificial intelligence that can be used by physicians, nurses, and patients to pre-screen for skin cancers...'
         },
         {
-          link: '#',
+          link: '#/app-details',
           image: image4,
           title: 'Canadian Assn of Retired People',
           description: 'CARP advocates for financial security and better access to healthcare for older adults...'

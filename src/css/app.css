@@ -478,9 +478,9 @@ a {
 }
 
 .title-4 {
-    font-size: 36px;
+    font-size: 24px;
     line-height: 36px;
-    font-weight: 600;
+    /* font-weight: 600; */
     color: #414040;
     margin-bottom: 20px;
     display: block;
@@ -537,6 +537,37 @@ a {
 }
 .q-field--auto-height .q-field__control, .q-field--auto-height .q-field__native {
     min-height: auto;
+}
+.layout-grid {
+    display: grid;
+    grid-template-columns: 8fr 4fr; /* 8:4 ratio */
+    gap: 16px; /* Space between columns */
+    align-items: start; /* Align items at the top */
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.logo-and-buttons {
+    text-align: center;
+}
+
+.app-logo {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.d-block {
+    display: block;
+
+}
+.fullwidth {
+    width: 100%;
+}
+.meta-tags .q-badge {
+    margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
     .om-content p {

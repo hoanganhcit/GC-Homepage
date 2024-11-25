@@ -67,26 +67,26 @@
                 <div class="col col-md 12 col-xs-12 q-item">
                     <div class="dl-item-section">
                         <div class="title-4">Connect to those you love with easy, fast and secure virtual visits</div>
-                        <div class="title-5 font-weight-light my-4">Through virtual visits, Gerry Connect strengthens social connection for older adults with their family and friends regardless of distance, lockdowns or other life challenges.</div>
+                        <div class="  my-4">Through virtual visits, Gerry Connect strengthens social connection for older adults with their family and friends regardless of distance, lockdowns or other life challenges.</div>
                     </div>
                     <div class="dl-item-section">
                         <div class="title-4">What does Gerry Connect offer?</div>
                         <ul class="my-4">
-                            <li><div class="title-5">Unlimited video calls for each older adult to 9 contacts</div></li>
-                            <li><div class="title-5">UEmail support</div></li>
-                            <li><div class="title-5">UGroup video calls</div></li>
-                            <li><div class="title-5">UAbility to leave video messages</div></li>
-                            <li><div class="title-5">UAbility to share photos, videos and YouTube links</div></li>
-                            <li><div class="title-5">UAbility to “drop in” via audio and/or video</div></li>
+                            <li><div class="">Unlimited video calls for each older adult to 9 contacts</div></li>
+                            <li><div class="">UEmail support</div></li>
+                            <li><div class="">UGroup video calls</div></li>
+                            <li><div class="">UAbility to leave video messages</div></li>
+                            <li><div class="">UAbility to share photos, videos and YouTube links</div></li>
+                            <li><div class="">UAbility to “drop in” via audio and/or video</div></li>
                         </ul>
                     </div>
                     <div class="dl-item-section">
                         <div class="title-4">What will you need to use Gerry Connect?</div>
                         <ul class="my-4">
-                            <li><div class="title-5 mb-30"><strong>For you, family, friends and caregivers</strong> - A mobile device to install the <strong>Gerry Connect</strong> app onto. This app is for you, family, friends, and caregivers. See FAQ for device specifications</div></li>
-                            <li><div class="title-5 mb-30"><strong>For older adults</strong> - An Android tablet or Apple iOS iPad to install the <strong>Gerry Connect for Older Adults</strong> app onto. See FAQ for device specifications</div></li>
-                            <li><div class="title-5"><strong>For everyone</strong> - A WiFi connection</div></li>
-                            <li><div class="title-5 mb-30"><strong>For everyone</strong> - An account on Google Play or the Apple App Store to download these apps</div></li>
+                            <li><div class=" mb-30"><strong>For you, family, friends and caregivers</strong> - A mobile device to install the <strong>Gerry Connect</strong> app onto. This app is for you, family, friends, and caregivers. See FAQ for device specifications</div></li>
+                            <li><div class=" mb-30"><strong>For older adults</strong> - An Android tablet or Apple iOS iPad to install the <strong>Gerry Connect for Older Adults</strong> app onto. See FAQ for device specifications</div></li>
+                            <li><div class=""><strong>For everyone</strong> - A WiFi connection</div></li>
+                            <li><div class=" mb-30"><strong>For everyone</strong> - An account on Google Play or the Apple App Store to download these apps</div></li>
                         </ul>
                     </div>
                 </div>
